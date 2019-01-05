@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Gif-Tastic!</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+        <ul class="nav">
+          <div class="nav-top container">
+            <li class="brand">
+              <h1> Gif-Tastic! </h1>
+            </li>
+            <li class="search container">
+                <input type="search" name="search" placeholder="What do you want to see?" class="search-box" id="search-box"/>
+                <button type="submit" class="search-btn"><span class="fa fa-search" for="search"></span></button>
+                <button class="more-btn"><span class="fa fa-plus-circle"></span></button>
+            </li>
+          </div>
+          <div class="nav-bottom container">
+            <li><h2>Recents:</h2></li>
+            <li class="buttons container" id="button-row">
+              <!-- new buttons go here -->
+            </li>
+          </div>
+        </ul>
+    </nav>
+    <section class="main container" >
+      <div class="gifs container" id="gif-box">
+      <!-- gifs go here -->
+      </div>
+
+      <!-- favorites go here -->
+      <aside class="sidebar">
+          <div class="sidebar-title">
+              <h3 >Favorites</h3>
+          </div>
+          <div class="favorites container-vertical" id="favorites">
+            <div class="favorite-statement">Click the <span class="fa fa-heart"></span> to Add Favorites!</div>
+          </div>
+      </aside>
+    </section>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

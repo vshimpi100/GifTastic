@@ -79,9 +79,6 @@ const renderGifs = (topic) => {
 const searchGifs = (input) => {
     topic = input.toLowerCase();
     gifCount = 10;
-    console.log(topics);
-    console.log(topic);
-    console.log(topics.includes(topic));
     if(topics.includes(topic)===false){
         topics.push(topic);
     }
@@ -110,7 +107,6 @@ const moreGifs = (topic) => {
 
         // Looping through each result item
         for (let i = gifCount-10; i < results.length; i++) {
-            console.log(i);
 
             // Set basic letiables
             let pauseImg = results[i].images.fixed_height_still.url;
@@ -186,8 +182,6 @@ $(".more-btn").on("click",function(){
 });
 
 $(document).on("click",".addFave",function(){
-    console.log("hello");
-    console.log($(this).attr("data-play"));
     addFavorite($(this).attr("data-play"));
 });
 
